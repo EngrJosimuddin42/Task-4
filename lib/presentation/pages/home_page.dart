@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Food Classifier')),
+      appBar: AppBar(
+        centerTitle: true,
+          title: const Text('Food Classifier')),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16),

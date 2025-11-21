@@ -1,28 +1,25 @@
 name: task_4
 description: "Food Classification App using Camera and TFLite"
-publish_to: 'none' # Private project, won't publish to pub.dev
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.10.0 <4.0.0"
+  sdk: ">=3.3.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # Core dependencies
-  cupertino_icons: ^1.0.8
   provider: ^6.0.5
-  path_provider: ^2.0.14
-  permission_handler: ^10.4.0
-
-  # Camera & Image
-  image_picker: ^0.8.7+4
-  camera: ^0.11.3
+  permission_handler: ^12.0.1
+  image_picker: ^1.0.7
+  path_provider: ^2.0.15
+  cupertino_icons: ^1.0.8
+  image: ^4.1.7
 
   # TensorFlow Lite
-  tflite: ^1.1.2
+  tflite_flutter: ^0.12.1
 
 dev_dependencies:
   flutter_test:
@@ -32,7 +29,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # Assets: TFLite model and labels
   assets:
     - assets/food_101_model.tflite
     - assets/food_101_labels.txt

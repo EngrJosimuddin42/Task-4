@@ -20,3 +20,6 @@ This project assesses your ability to integrate a TFLite model, use the camera, 
 
 - Flutter SDK >= 3.10
 - A device or emulator with camera support
+
+###  run command
+flutter run --use-application-binary "android/app/build/outputs/apk/debug/app-debug.apk"
